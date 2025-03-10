@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'OTWelcomeBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+}
+
+body, html {
+  font-family: 'OTWelcomeBA';
+  padding: 0;
+  margin: 0 auto;
+  background-color: rgb(232, 226, 216);
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+#sorry_wrap {
+  width: 90%;
+  min-width:280px;
+  max-width: 1400px;
+  min-height:90vh;
+  border-radius: 20px;
+  
+  padding:0 0 40px 0;
+  margin: 0 auto;
+  margin-top:5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+ 
+  background-color: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+  letter-spacing: normal;
+  word-break: keep-all;
+}
+
+.sorry_img {
+  width: 80%;
+  max-width: 500px;
+}
+
+.sorry_img > img {
+  width: 100%;
+}
+
+#sorry_wrap > a {
+  max-width: 300px;
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+  padding: 8px 20px;
+  display: inline-block;
+  background: white;
+  border-radius: 8px;
+  transition: all 0.4s;
+  border:1px solid black;
+}
+
+#sorry_wrap > a:hover {
+  background: rgb(14, 14, 14);
+  color: white;
+}
+.cursor_not_blink {
+  /* 포커스 커서 뜨지 않게 (컨텐츠에 커서 깜빡거림 없앰) */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Opera and Firefox */
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: left;
+    font-size: 30px;
+    padding-left:5vw;
+  }
+}
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 20px;
+    padding-left:5vw;
+  }
+}

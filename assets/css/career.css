@@ -1,0 +1,138 @@
+@charset "UTF-8";
+#carr_wrap {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.carr_title {
+  color: rgb(24, 24, 24);
+  padding: 10px 0px 10px 0;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.carr_title > span {
+  font-family: "SUIT-Medium";
+  font-size: 12px;
+  color: rgb(91, 111, 98);
+}
+
+.carr_contents {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carr_info {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(32, 32, 32);
+}
+
+.carrs {
+  width: 100%;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.carr {
+  min-width: 300px;
+}
+
+.carr:last-child {
+  border: none;
+}
+
+.carr_img {
+  overflow: hidden;
+}
+
+.carr_img > img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carr_img_m {
+  min-width: 300px;
+  width: 20%;
+}
+
+.carr_sub {
+  box-sizing: border-box;
+}
+
+.carr_sub_title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(29, 29, 29);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.carr > div:nth-last-child(1) {
+  /*했던 것 설명 배열들*/
+  width: 100%;
+  padding: 0 0 30px 0px;
+}
+
+.carr_des {
+  font-family: "SUIT-Medium";
+  color: rgb(183, 183, 183);
+}
+
+.how2_des_title {
+  font-size: 1.2rem;
+}
+
+.carr_site {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carr_site {
+  display: block;
+  background: rgb(204, 213, 216);
+  padding: 3px 4px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.carr_site > a:hover {
+  background: rgba(249, 249, 249, 0.76);
+}
+
+@media screen and (max-width: 900px) {
+  .carr_contents {
+    margin: 0 auto;
+  }
+  .carr {
+    flex-direction: column;
+  }
+  .carr_img_m {
+    width: 35%;
+  }
+  .carr > div:nth-last-child(1) {
+    /*했던 것 설명 배열들*/
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carr {
+    flex-direction: column;
+  }
+  .carr_img_m {
+    width: 50%;
+  }
+  .carr > div:nth-last-child(1) {
+    /*했던 것 설명 배열들*/
+    width: 90%;
+  }
+}

@@ -1,0 +1,51 @@
+//---컬러지정
+@import "./color.scss";
+/* 로딩 파트 */
+#loading_wrap {
+    position:fixed;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    z-index: 100;
+    display:flex;
+    background: rgb(0, 0, 0);
+   
+   
+  }
+  #loading_wrap.bye{
+    translate:all 0.5s;
+    opacity: 0;
+    width:0;
+    height: 0;
+    overflow: hidden;
+  }
+.loading_1{
+  width:100px;
+  animation: grow 1s infinite alternate;
+}
+.loading_2{
+  
+  width:90px;
+  position: absolute;
+ 
+}
+
+  #icon {
+    padding: 20px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 3;
+    stroke-linecap: round;
+    fill: black;
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+  }
+  
+  #icon.finished {
+    fill-opacity: 1;
+  }
+  @keyframes grow {
+    0%{transform:scale(1,1)}
+    100%{transform:scale(1.3,1.3);
+    opacity:0.4;}
+  }

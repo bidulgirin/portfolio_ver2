@@ -1,0 +1,55 @@
+#skill {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skill ul {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill ul li {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.prImg {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.prImg img {
+  width: 100%;
+  animation: bingle 4s infinite;
+}
+
+@keyframes bingle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .skill ul {
+    height: 300px;
+  }
+  .skill ul li {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

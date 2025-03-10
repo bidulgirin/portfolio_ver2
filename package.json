@@ -1,0 +1,42 @@
+{
+  "name": "portfolio_layout-main",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000_\u0000l\u0000a\u0000y\u0000o\u0000u\u0000t\u0000_\u00002\u00000\u00002\u00002\u0000_\u00000\u00005\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "sass assets/sass:assets/dist",
+    "watch:sass": "sass --watch assets/sass:assets/dist "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bidulgirin/portfolio_layout_2022_05.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bidulgirin/portfolio_layout_2022_05/issues"
+  },
+  "homepage": "https://github.com/bidulgirin/portfolio_layout_2022_05#readme",
+  "dependencies": {
+    "lottie-web": "^5.10.0",
+    "three": "^0.142.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "core-js": "^3.23.5",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}

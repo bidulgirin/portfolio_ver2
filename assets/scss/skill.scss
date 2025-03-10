@@ -1,0 +1,52 @@
+//---컬러지정
+@import "./color.scss";
+
+//--- skill 파트 레이아웃 스타일
+  #skill{
+      width:100%;
+      height:300px;
+      overflow: hidden;
+    }
+  .skill{
+    position:relative;
+  }
+  .skill ul{
+    width:100%;
+    background:rgb(30, 30, 30);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  
+  .skill ul li{
+    
+    width:33%;
+    opacity: .3;
+  }
+  .skill ul li:hover .skillTxt {
+    visibility: visible;
+  }
+  //--- 다룰수있는 프로그램들 레이아웃
+  
+  .prImg{
+    width:100px;
+    margin:0 auto;
+  
+  }
+  .prImg img{
+    width:100%;
+  }
+  .skillTxt{
+    width:300px;
+    position:absolute;
+    top:100px;
+    left:0;
+    background:$baseWhiteColor;
+    visibility: hidden;
+    z-index: 10;
+    padding:20px;
+    border-radius: 10px;
+  }
